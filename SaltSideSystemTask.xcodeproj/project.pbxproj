@@ -9,21 +9,37 @@
 /* Begin PBXBuildFile section */
 		CB1B0B962569765B00534BE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B0B952569765B00534BE8 /* AppDelegate.swift */; };
 		CB1B0B982569765B00534BE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B0B972569765B00534BE8 /* SceneDelegate.swift */; };
-		CB1B0B9A2569765B00534BE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B0B992569765B00534BE8 /* ViewController.swift */; };
+		CB1B0B9A2569765B00534BE8 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B0B992569765B00534BE8 /* ProductsViewController.swift */; };
 		CB1B0B9D2569765B00534BE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB1B0B9B2569765B00534BE8 /* Main.storyboard */; };
 		CB1B0B9F2569765C00534BE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB1B0B9E2569765C00534BE8 /* Assets.xcassets */; };
 		CB1B0BA22569765C00534BE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB1B0BA02569765C00534BE8 /* LaunchScreen.storyboard */; };
+		CB1B0BAE2569785D00534BE8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B0BAD2569785D00534BE8 /* Constants.swift */; };
+		CB1B0BDE25697F3B00534BE8 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B0BDD25697F3B00534BE8 /* ProductTableViewCell.swift */; };
+		CB1B0BE12569805B00534BE8 /* ProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B0BE02569805B00534BE8 /* ProductResponse.swift */; };
+		CB1B0BE62569816000534BE8 /* HttpUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B0BE52569816000534BE8 /* HttpUtility.swift */; };
+		CB1B0BE92569832300534BE8 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B0BE82569832300534BE8 /* ProductViewModel.swift */; };
+		CB1B0C0025698EA800534BE8 /* ProductsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B0BFF25698EA800534BE8 /* ProductsDetailViewController.swift */; };
+		EBAB93BA5A3184831455A327 /* Pods_SaltSideSystemTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B96F44CCBD98A13BEE00213 /* Pods_SaltSideSystemTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B96F44CCBD98A13BEE00213 /* Pods_SaltSideSystemTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaltSideSystemTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62E3ABC66DA48738B0DAF201 /* Pods-SaltSideSystemTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaltSideSystemTask.release.xcconfig"; path = "Target Support Files/Pods-SaltSideSystemTask/Pods-SaltSideSystemTask.release.xcconfig"; sourceTree = "<group>"; };
 		CB1B0B922569765B00534BE8 /* SaltSideSystemTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaltSideSystemTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB1B0B952569765B00534BE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB1B0B972569765B00534BE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CB1B0B992569765B00534BE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB1B0B992569765B00534BE8 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 		CB1B0B9C2569765B00534BE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB1B0B9E2569765C00534BE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB1B0BA12569765C00534BE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB1B0BA32569765C00534BE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB1B0BAD2569785D00534BE8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CB1B0BDD25697F3B00534BE8 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		CB1B0BE02569805B00534BE8 /* ProductResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResponse.swift; sourceTree = "<group>"; };
+		CB1B0BE52569816000534BE8 /* HttpUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpUtility.swift; sourceTree = "<group>"; };
+		CB1B0BE82569832300534BE8 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		CB1B0BFF25698EA800534BE8 /* ProductsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsDetailViewController.swift; sourceTree = "<group>"; };
+		F738E6680FF2087D608969B9 /* Pods-SaltSideSystemTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaltSideSystemTask.debug.xcconfig"; path = "Target Support Files/Pods-SaltSideSystemTask/Pods-SaltSideSystemTask.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +47,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBAB93BA5A3184831455A327 /* Pods_SaltSideSystemTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B255B384B2F464C855E14D9A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F738E6680FF2087D608969B9 /* Pods-SaltSideSystemTask.debug.xcconfig */,
+				62E3ABC66DA48738B0DAF201 /* Pods-SaltSideSystemTask.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B8E4CB14342AA992A755B904 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B96F44CCBD98A13BEE00213 /* Pods_SaltSideSystemTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CB1B0B892569765B00534BE8 = {
 			isa = PBXGroup;
 			children = (
 				CB1B0B942569765B00534BE8 /* SaltSideSystemTask */,
 				CB1B0B932569765B00534BE8 /* Products */,
+				B255B384B2F464C855E14D9A /* Pods */,
+				B8E4CB14342AA992A755B904 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +93,93 @@
 		CB1B0B942569765B00534BE8 /* SaltSideSystemTask */ = {
 			isa = PBXGroup;
 			children = (
+				CB1B0BE32569814400534BE8 /* Services */,
+				CB1B0BB1256978B300534BE8 /* Models */,
+				CB1B0BB2256978BB00534BE8 /* Views */,
+				CB1B0BB3256978C400534BE8 /* ViewModels */,
+				CB1B0BAC2569784100534BE8 /* Constants */,
 				CB1B0B952569765B00534BE8 /* AppDelegate.swift */,
 				CB1B0B972569765B00534BE8 /* SceneDelegate.swift */,
-				CB1B0B992569765B00534BE8 /* ViewController.swift */,
 				CB1B0B9B2569765B00534BE8 /* Main.storyboard */,
 				CB1B0B9E2569765C00534BE8 /* Assets.xcassets */,
 				CB1B0BA02569765C00534BE8 /* LaunchScreen.storyboard */,
 				CB1B0BA32569765C00534BE8 /* Info.plist */,
 			);
 			path = SaltSideSystemTask;
+			sourceTree = "<group>";
+		};
+		CB1B0BAC2569784100534BE8 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				CB1B0BAD2569785D00534BE8 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		CB1B0BB1256978B300534BE8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB1B0BB4256978EC00534BE8 /* ProductsModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB1B0BB2256978BB00534BE8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB1B0BF8256989A000534BE8 /* ProductsDetailView */,
+				CB1B0BB5256978FB00534BE8 /* ProductsView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CB1B0BB3256978C400534BE8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CB1B0BB62569790900534BE8 /* ProductsViewModel */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CB1B0BB4256978EC00534BE8 /* ProductsModels */ = {
+			isa = PBXGroup;
+			children = (
+				CB1B0BE02569805B00534BE8 /* ProductResponse.swift */,
+			);
+			path = ProductsModels;
+			sourceTree = "<group>";
+		};
+		CB1B0BB5256978FB00534BE8 /* ProductsView */ = {
+			isa = PBXGroup;
+			children = (
+				CB1B0B992569765B00534BE8 /* ProductsViewController.swift */,
+				CB1B0BDD25697F3B00534BE8 /* ProductTableViewCell.swift */,
+			);
+			path = ProductsView;
+			sourceTree = "<group>";
+		};
+		CB1B0BB62569790900534BE8 /* ProductsViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CB1B0BE82569832300534BE8 /* ProductViewModel.swift */,
+			);
+			path = ProductsViewModel;
+			sourceTree = "<group>";
+		};
+		CB1B0BE32569814400534BE8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CB1B0BE52569816000534BE8 /* HttpUtility.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CB1B0BF8256989A000534BE8 /* ProductsDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				CB1B0BFF25698EA800534BE8 /* ProductsDetailViewController.swift */,
+			);
+			path = ProductsDetailView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB1B0BA62569765C00534BE8 /* Build configuration list for PBXNativeTarget "SaltSideSystemTask" */;
 			buildPhases = (
+				0C5E86B6872F1B2DFF8C39E7 /* [CP] Check Pods Manifest.lock */,
 				CB1B0B8E2569765B00534BE8 /* Sources */,
 				CB1B0B8F2569765B00534BE8 /* Frameworks */,
 				CB1B0B902569765B00534BE8 /* Resources */,
+				C3B00F2A18AD1ECF41B15321 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,14 +249,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C5E86B6872F1B2DFF8C39E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SaltSideSystemTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3B00F2A18AD1ECF41B15321 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SaltSideSystemTask/Pods-SaltSideSystemTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SaltSideSystemTask/Pods-SaltSideSystemTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SaltSideSystemTask/Pods-SaltSideSystemTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CB1B0B8E2569765B00534BE8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB1B0B9A2569765B00534BE8 /* ViewController.swift in Sources */,
+				CB1B0BE12569805B00534BE8 /* ProductResponse.swift in Sources */,
+				CB1B0B9A2569765B00534BE8 /* ProductsViewController.swift in Sources */,
 				CB1B0B962569765B00534BE8 /* AppDelegate.swift in Sources */,
+				CB1B0BDE25697F3B00534BE8 /* ProductTableViewCell.swift in Sources */,
+				CB1B0BE62569816000534BE8 /* HttpUtility.swift in Sources */,
+				CB1B0C0025698EA800534BE8 /* ProductsDetailViewController.swift in Sources */,
 				CB1B0B982569765B00534BE8 /* SceneDelegate.swift in Sources */,
+				CB1B0BE92569832300534BE8 /* ProductViewModel.swift in Sources */,
+				CB1B0BAE2569785D00534BE8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +448,7 @@
 		};
 		CB1B0BA72569765C00534BE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F738E6680FF2087D608969B9 /* Pods-SaltSideSystemTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +467,7 @@
 		};
 		CB1B0BA82569765C00534BE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62E3ABC66DA48738B0DAF201 /* Pods-SaltSideSystemTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
