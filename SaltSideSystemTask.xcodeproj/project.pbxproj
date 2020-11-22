@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB1A9657256A5FEE00D5E7BE /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1A9656256A5FEE00D5E7BE /* Extension+UIViewController.swift */; };
 		CB1B0B962569765B00534BE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B0B952569765B00534BE8 /* AppDelegate.swift */; };
 		CB1B0B982569765B00534BE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B0B972569765B00534BE8 /* SceneDelegate.swift */; };
 		CB1B0B9A2569765B00534BE8 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B0B992569765B00534BE8 /* ProductsViewController.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		1B96F44CCBD98A13BEE00213 /* Pods_SaltSideSystemTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaltSideSystemTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62E3ABC66DA48738B0DAF201 /* Pods-SaltSideSystemTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaltSideSystemTask.release.xcconfig"; path = "Target Support Files/Pods-SaltSideSystemTask/Pods-SaltSideSystemTask.release.xcconfig"; sourceTree = "<group>"; };
+		CB1A9656256A5FEE00D5E7BE /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
 		CB1B0B922569765B00534BE8 /* SaltSideSystemTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaltSideSystemTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB1B0B952569765B00534BE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB1B0B972569765B00534BE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +62,6 @@
 				F738E6680FF2087D608969B9 /* Pods-SaltSideSystemTask.debug.xcconfig */,
 				62E3ABC66DA48738B0DAF201 /* Pods-SaltSideSystemTask.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -70,6 +71,14 @@
 				1B96F44CCBD98A13BEE00213 /* Pods_SaltSideSystemTask.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB1A9651256A5F2F00D5E7BE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CB1A9656256A5FEE00D5E7BE /* Extension+UIViewController.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		CB1B0B892569765B00534BE8 = {
@@ -127,6 +136,7 @@
 		CB1B0BB2256978BB00534BE8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CB1A9651256A5F2F00D5E7BE /* Extensions */,
 				CB1B0BF8256989A000534BE8 /* ProductsDetailView */,
 				CB1B0BB5256978FB00534BE8 /* ProductsView */,
 			);
@@ -304,6 +314,7 @@
 				CB1B0C0025698EA800534BE8 /* ProductsDetailViewController.swift in Sources */,
 				CB1B0B982569765B00534BE8 /* SceneDelegate.swift in Sources */,
 				CB1B0BE92569832300534BE8 /* ProductViewModel.swift in Sources */,
+				CB1A9657256A5FEE00D5E7BE /* Extension+UIViewController.swift in Sources */,
 				CB1B0BAE2569785D00534BE8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

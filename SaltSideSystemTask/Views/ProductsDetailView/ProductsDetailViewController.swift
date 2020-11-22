@@ -21,10 +21,11 @@ class ProductsDetailViewController: UIViewController {
         setUpView()
     }
     
+    // MARK: - Setting up Label's Data
     func setUpView(){
         self.titleLabel.text = product?.title
         self.descriptionLabel.text = product?.description
-
+        self.imageViewLabel.kf.indicatorType = .activity
         self.imageViewLabel.kf.setImage(with: URL(string: (product?.image)!)!)
     }
     

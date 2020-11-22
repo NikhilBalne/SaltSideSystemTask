@@ -15,6 +15,7 @@ class ProductsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        showActivityIndicator()
         getProducts()
     }
 
@@ -25,6 +26,7 @@ class ProductsViewController: UIViewController {
             self.productsTableData = products
             
             DispatchQueue.main.async {
+                self.hideActivityIndicator()
                 self.productsTableView.reloadData()
             }
         }
@@ -57,6 +59,7 @@ extension ProductsViewController : UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailProductView = self.storyboard?.instantiateViewController(identifier: "ProductsDetailViewController") as? ProductsDetailViewController
         detailProductView?.product = productsTableData?[indexPath.row]
+        tableView.deselectRow(at: indexPath, animated: true)
         self.navigationController?.pushViewController(detailProductView!, animated: true)
     }
     

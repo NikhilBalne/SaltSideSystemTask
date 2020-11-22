@@ -18,10 +18,11 @@ class ProductTableViewCell: UITableViewCell {
         self.descriptionLabel.text = product.description
         
         // MARK: - CardView Effect
-        cardView.layer.shadowColor = UIColor.black.cgColor
-        cardView.layer.shadowOpacity = 1
-        cardView.layer.shadowOffset = .zero
-        cardView.layer.shadowRadius = 5
+        cardView.layer.cornerRadius = 20.0
+        cardView.layer.shadowColor = UIColor.gray.cgColor
+        cardView.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+        cardView.layer.shadowRadius = 12.0
+        cardView.layer.shadowOpacity = 0.7
         
     }
     
