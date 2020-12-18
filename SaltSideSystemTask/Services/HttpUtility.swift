@@ -14,18 +14,21 @@ class HttpUtility {
     
     private init(){}
     
-    func makeApiGetCall<T:Decodable>(requestUrl: URL, resultType: T.Type, completionHandler:@escaping(_ result: T?)-> Void){
+    func makeApiGetCall<T:Decodable>(requestUrl: URL, resultType: T.Type, completionHandler:@escaping(_ result: T?,Error?,HTTPURLResponse?)-> Void){
         
         URLSession.shared.dataTask(with: requestUrl) { (responseData, httpUrlResponse, error) in
+            
+            let httpUrlStatusCode = httpUrlResponse as? HTTPURLResponse
             
             if(error == nil && responseData != nil && responseData?.count != 0){
             
                 do {
                     let result = try JSONDecoder().decode(T.self, from: responseData!)
-                    _ = completionHandler(result)
+                    _ = completionHandler(result,nil,httpUrlStatusCode)
                 
                 }catch let error{
-                    debugPrint("error occured while decoding = \(error)")
+//                    debugPrint("error occured while decoding = \(error)")
+                    _ = completionHandler(nil,error,httpUrlStatusCode)
                 }
             }
 

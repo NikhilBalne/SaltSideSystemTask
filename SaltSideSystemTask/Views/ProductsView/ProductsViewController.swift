@@ -22,9 +22,32 @@ class ProductsViewController: UIViewController {
     // MARK: - Get Products
     private func getProducts(){
                 
-        productsViewModel.getProducts { (products) in
-            self.productsTableData = products
+        productsViewModel.getProducts { (products,error,httpUrlResponse) in
             
+            if error == nil {
+                print("Error is nil")
+            } else {
+//                print("Error:\(error)")
+            }
+            
+            if httpUrlResponse?.statusCode == 200 {
+                self.productsTableData = products
+            } else {
+                DispatchQueue.main.async {
+                    
+                    self.openAlert(title: "Error", message: "Unable to Fetch", alertStyle: .alert, actionTitles: ["Ok","Cancel"], actionStyles: [.default,.cancel], actions: [
+                        {_ in
+                            print("okay click")
+                        },
+                        {_ in
+                            print("cancel click")
+                        }
+                    ])
+                    
+                }
+                
+            }
+        
             DispatchQueue.main.async {
                 self.hideActivityIndicator()
                 self.productsTableView.reloadData()
@@ -64,4 +87,24 @@ extension ProductsViewController : UITableViewDelegate,UITableViewDataSource {
     }
     
     
+}
+
+extension UIViewController{
+
+    // Global Alert
+    // Define Your number of buttons, styles and completion
+    public func openAlert(title: String,
+                          message: String,
+                          alertStyle:UIAlertController.Style,
+                          actionTitles:[String],
+                          actionStyles:[UIAlertAction.Style],
+                          actions: [((UIAlertAction) -> Void)]){
+
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: alertStyle)
+        for(index, indexTitle) in actionTitles.enumerated(){
+            let action = UIAlertAction(title: indexTitle, style: actionStyles[index], handler: actions[index])
+            alertController.addAction(action)
+        }
+        self.present(alertController, animated: true)
+    }
 }
